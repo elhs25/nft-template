@@ -45,12 +45,8 @@ module.exports = {
     development: {
       host: "127.0.0.1",     // Localhost (default: none)
       port: 7545,            // Standard Ethereum port (default: none)
-      network_id: 5777,       // Any network (default: none)
-    },
-    "development-cli": {
-      host: "127.0.0.1",     // Localhost (default: none)
-      port: 7545,            // Standard Ethereum port (default: none)
-      network_id: 5777,       // ganache-cli networkId (to run with this number, run `ganache-cli -p 7545 -i 5777`)
+      // To run with ganache-cli, run in other terminal this command `ganache-cli -p 7545 -i 5777`
+      network_id: "*",       // Any network (default: none)
     },
     // Another network with more advanced options...
     // advanced: {
